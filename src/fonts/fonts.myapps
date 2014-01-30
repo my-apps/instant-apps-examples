@@ -1,0 +1,9 @@
+<project name="fonts" type="application">
+	<runtime_parameter name="main_class">biz.app.examples.fonts.Main</runtime_parameter>
+	<android_min_api_level value="10" />
+	<runtime_parameter name="android_no_window_title" />
+	<android_package_name>biz.app.examples.fonts</android_package_name>
+	<import_library name="myapps-framework" />
+	<resource_file path="images/gray.png" alias="gray.png" />
+	<ui_xml file="src/biz/app/examples/fonts/UIMain.ui" />
+</project>

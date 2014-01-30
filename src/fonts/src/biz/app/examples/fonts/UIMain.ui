@@ -1,0 +1,13 @@
+<ui package="biz.app.examples.fonts" class="UIMain">
+  <LinearLayout id="uiMainContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+    <LinearLayout id="uiInputContainer" layout_size="FILL_PARENT, 50" backgroundimage="gray.png@tile:none"
+		alignment="center">
+      <InputLine id="uiInputLine" text="Quick brown fox jumps right over little lazy dog." hint="Input example text."
+           layout_size="FILL_PARENT, WRAP_CONTENT" layout_weight="1" layout_margins="2,2,2,2"
+		   font="default, 16, normal" textcolor="blue" hintcolor="yellow" alignment="center" />
+      <Button id="uiOkButton" text="ОK" layout_weight="8" layout_size="FILL_PARENT, WRAP_CONTENT" layout_margins="2,2,2,2" font="default, 20, normal" />
+    </LinearLayout>
+    <TabBar id="uiTabBar" layout_size="FILL_PARENT, 0" layout_weight="1000" backgroundimage="gray.png@tile:none" />
+    <TabBar id="uiStyleContainer" layout_size="FILL_PARENT, WRAP_CONTENT" layout_weight="1" backgroundimage="gray.png@tile:none" />
+  </LinearLayout>
+</ui>

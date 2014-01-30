@@ -1,0 +1,8 @@
+<ui package="biz.app.examples.mapview" class="UIMapViewExample">
+	<LinearLayout id="uiMain" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+		<TitleBar id="uiTitleBar" text="MapView example" layout_size="FILL_PARENT, WRAP_CONTENT">
+			<TitleBarButton id="uiAddMarkerButton" text="Add marker" />
+		</TitleBar>
+		<MapView id="uiMapView" zoom="11" layout_size="FILL_PARENT, FILL_PARENT" />
+	</LinearLayout>
+</ui>

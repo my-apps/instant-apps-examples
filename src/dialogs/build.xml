@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="dialogs" default="dialogs" basedir=".">
+
+	<!-- BEGIN COMMON PROLOG -->
+	<property name="myapps" value="myapps" />
+	<sequential>
+		<local name="myapps-xml" />
+		<exec executable="${myapps}" logerror="true" outputproperty="myapps-sdk"><arg value="-print-sdk-path" /></exec>
+		<condition property="myapps-xml" value="ant-dummy.xml" else="ant-common.xml"><isset property="myapps.found" /></condition>
+		<import file="${myapps-sdk}/share/my-apps.com/${myapps-xml}" />
+	</sequential>
+	<!-- END COMMON PROLOG -->
+
+	<target name="dialogs">
+		<myapps-application>
+			<src><pathelement location="src" /></src>
+		</myapps-application>
+	</target>
+
+	<target name="clean" depends="dialogs-clean" />
+	<target name="dialogs-clean">
+		<myapps-clean-library />
+	</target>
+
+</project>

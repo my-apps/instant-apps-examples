@@ -1,0 +1,86 @@
+<ui package="biz.app.examples.backgrounds" class="UIBackgroundsExample">
+	<TabBar id="uiTabBar" layout_size="FILL_PARENT, FILL_PARENT">
+		<TabPage id="uiTileSmall" text="Small+Tile"> 
+			<LinearLayout id="uiTileSmallContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar1" text="Backgrounds example" layout_size="FILL_PARENT, WRAP_CONTENT" />
+				<SimpleLayout id="uiTileSmallBackground" backgroundimage="small.png@tile:both" layout_size="FILL_PARENT, FILL_PARENT">
+					<Label id="uiTileSmallLabel" text="Small picture, tiled" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="black"/>
+				</SimpleLayout>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiTileBig" text="Big+Tile">
+			<LinearLayout id="uiTileBigContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar2" text="Backgrounds example" layout_size="FILL_PARENT, WRAP_CONTENT" />
+				<SimpleLayout id="uiTileBigBackground" backgroundimage="big.png@tile:both" layout_size="FILL_PARENT, FILL_PARENT">
+					<Label id="uiTileBigLabel" text="Big picture, tiled" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="black"/>
+				</SimpleLayout>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiStretchSmall" text="Small+Stretch">
+			<LinearLayout id="uiStretchSmallContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar3" text="Backgrounds example" layout_size="FILL_PARENT, WRAP_CONTENT" />
+				<SimpleLayout id="uiStretchSmallBackground" backgroundimage="small.png@tile:none" layout_size="FILL_PARENT, FILL_PARENT">
+					<Label id="uiStretchSmallLabel" text="Small picture, stretched" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="black"/>
+				</SimpleLayout>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiStretchBig" text="Big+Stretch">
+			<LinearLayout id="uiStretchBigContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar4" text="Backgrounds example" layout_size="FILL_PARENT, WRAP_CONTENT" />
+				<SimpleLayout id="uiStretchBigBackground" backgroundimage="big.png@tile:none" layout_size="FILL_PARENT, FILL_PARENT">
+					<Label id="uiStretchBigLabel" text="Big picture, stretched" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="white"/>
+				</SimpleLayout>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiHorizontalSmall" text="Small+Horizontal">
+			<LinearLayout id="uiHorizontalSmallContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar5" text="Backgrounds example" layout_size="FILL_PARENT, WRAP_CONTENT" />
+				<SimpleLayout id="uiHorizontalSmallBackground" backgroundimage="ios_rotated.png@tile:horizontal" layout_size="FILL_PARENT, FILL_PARENT">
+					<Label id="uiHorizontalSmallLabel" text="Small picture, horizontally tiled" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="white"/>
+				</SimpleLayout>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiHorizontalBig" text="Long+Horizontal">
+			<LinearLayout id="uiHorizontalBigContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar6" text="Backgrounds example" layout_size="FILL_PARENT, WRAP_CONTENT" />
+				<SimpleLayout id="uiHorizontalBigBackground" backgroundimage="longcat.png@tile:horizontal" layout_size="FILL_PARENT, FILL_PARENT">
+					<Label id="uiHorizontalBigLabel" text="Long picture, horizontally tiled" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="black"/>
+				</SimpleLayout>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiVerticalSmall" text="Small+Vertical">
+			<LinearLayout id="uiVerticalSmallContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar7" text="Backgrounds example" layout_size="FILL_PARENT, WRAP_CONTENT" />
+				<SimpleLayout id="uiVerticalSmallBackground" backgroundimage="ios.png@tile:vertical" layout_size="FILL_PARENT, FILL_PARENT">
+					<Label id="uiVerticalSmallLabel" text="Small picture, vertically tiled" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="white"/>
+				</SimpleLayout>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiVerticalBig" text="Wide+Vertical">
+			<LinearLayout id="uiVerticalBigContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar8" text="Backgrounds example" layout_size="FILL_PARENT, WRAP_CONTENT" />
+				<SimpleLayout id="uiVerticalBigBackground" backgroundimage="widecat.png@tile:vertical" layout_size="FILL_PARENT, FILL_PARENT">
+					<Label id="uiVerticalBigLabel" text="Wide picture, vertically tiled" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="black"/>
+				</SimpleLayout>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiTbTile" text="TitleBar+Tile">
+			<LinearLayout id="uiTbTileContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar9" text="" layout_size="FILL_PARENT, WRAP_CONTENT" backgroundimage="small.png@tile:both"/>
+				<Label id="uiTbTileLabel" text="Tiled titlebar" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="white"/>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiTbStretch" text="TitleBar+Stretch">
+			<LinearLayout id="uiTbStretchContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar10" text="" layout_size="FILL_PARENT, WRAP_CONTENT" backgroundimage="big.png@tile:none"/>
+				<Label id="uiTbStretchLabel" text="Stretched titlebar" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="white"/>
+			</LinearLayout>
+		</TabPage>
+		<TabPage id="uiTbHorizontal" text="TitleBar+Horizontal">
+			<LinearLayout id="uiTbHorizontalContainer" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+				<TitleBar id="uiTitleBar11" text="" layout_size="FILL_PARENT, WRAP_CONTENT" backgroundimage="ios.png@tile:horizontal"/>
+				<Label id="uiTbHorizontalLabel" text="Horizontally tiled titlebar" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center" textcolor="white"/>
+			</LinearLayout>
+		</TabPage>
+	</TabBar>
+</ui>

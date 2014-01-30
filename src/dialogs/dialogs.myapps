@@ -1,0 +1,7 @@
+<project name="dialogs" type="application">
+	<runtime_parameter name="main_class">biz.app.examples.dialogs.Main</runtime_parameter>
+	<import_library name="myapps-framework" />
+	<android_package_name>biz.app.examples.dialogs</android_package_name>
+	<android_title>Dialogs Example</android_title>
+	<ui_xml file="src/biz/app/examples/dialogs/UIDialogsExample.ui" />
+</project>

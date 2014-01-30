@@ -1,0 +1,15 @@
+<project name="layouts" type="application">
+	<android_package_name>biz.app.examples.layouts</android_package_name>
+	<android_title>Layouts example</android_title>
+	<runtime_parameter name="main_class">biz.app.examples.layouts.Main</runtime_parameter>
+	<android_min_api_level value="10" />
+	<import_library name="myapps-framework" />
+	<resource_file path="images/red.png" alias="red.png" />
+	<resource_file path="images/green.png" alias="green.png" />
+	<resource_file path="images/blue.png" alias="blue.png" />
+	<resource_file path="images/gray.png" alias="gray.png" />
+	<ui_xml file="src/biz/app/examples/layouts/UIMain.ui" />
+	<language_xml file="src/biz/app/examples/layouts/Strings.i18n"  />
+    <runtime_parameter name=""></runtime_parameter>
+    <runtime_parameter name="*"></runtime_parameter>
+</project>

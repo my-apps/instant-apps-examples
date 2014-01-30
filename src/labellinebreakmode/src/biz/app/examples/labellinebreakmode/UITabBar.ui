@@ -1,0 +1,3 @@
+<ui package="biz.app.examples.labellinebreakmode" class="UITabBar">
+	<TabBar id="uiTabBar" layout_size="FILL_PARENT, FILL_PARENT" />
+</ui>

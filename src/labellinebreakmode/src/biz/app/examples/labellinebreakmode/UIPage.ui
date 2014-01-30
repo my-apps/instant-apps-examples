@@ -1,0 +1,6 @@
+<ui package="biz.app.examples.labellinebreakmode" class="UIPage">
+	<LinearLayout id="uiMain" layout_size="FILL_PARENT, FILL_PARENT" orientation="vertical">
+		<TitleBar id="uiTitleBar" />
+		<Label id="uiLabel" layout_size="FILL_PARENT, FILL_PARENT" textcolor="#ffffff" />
+	</LinearLayout>
+</ui>

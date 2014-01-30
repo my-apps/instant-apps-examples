@@ -1,0 +1,14 @@
+<ui package="biz.app.examples.dialogs" class="UIDialogsExample">
+    <ScrollLayout id="uiScroll" layout_size="FILL_PARENT, FILL_PARENT">
+		<LinearLayout id="uiMain" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT">
+			<Button id="uiMessageBoxButton" text="MessageBox" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center"/>
+			<Button id="uiInputButton" text="TextInputDialog" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center"/>
+			<Button id="uiInputSecureButton" text="TextInputDialog (secure)" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center"/>
+			<Button id="uiLoginButton" text="LoginDialog" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center"/>
+			<Button id="uiSelectButton" text="SelectionDialog" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center"/>
+			<Button id="uiMulteselectionButton" text="MultipleSelectionDialog" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center"/>
+			<Button id="uiDateButton" text="DateSelectionDialog" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center"/>
+			<Button id="uiProgressButton" text="ProgressDialog" layout_size="WRAP_CONTENT, WRAP_CONTENT" layout_alignment="center"/>
+		</LinearLayout>
+	</ScrollLayout>
+</ui>

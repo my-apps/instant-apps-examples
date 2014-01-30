@@ -1,0 +1,7 @@
+<project name="mapview" type="application">
+	<android_package_name>biz.app.examples.mapview</android_package_name>
+	<android_title>MapView example</android_title>
+	<runtime_parameter name="main_class">biz.app.examples.mapview.Main</runtime_parameter>
+	<import_library name="myapps-framework" />
+	<ui_xml file="src/biz/app/examples/mapview/UIMapViewExample.ui" />
+</project>

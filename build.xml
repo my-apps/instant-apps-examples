@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="all" basedir=".">
+
+	<!-- BEGIN COMMON PROLOG -->
+	<property name="myapps" value="myapps" />
+	<sequential>
+		<local name="myapps-xml" />
+		<exec executable="${myapps}" logerror="true" outputproperty="myapps-sdk"><arg value="-print-sdk-path" /></exec>
+		<condition property="myapps-xml" value="ant-dummy.xml" else="ant-common.xml"><isset property="myapps.found" /></condition>
+		<import file="${myapps-sdk}/share/my-apps.com/${myapps-xml}" />
+	</sequential>
+	<!-- END COMMON PROLOG -->
+
+	<target name="all">
+		<ant dir="src/backgrounds" target="backgrounds" useNativeBasedir="true" />
+		<ant dir="src/dialogs" target="dialogs" useNativeBasedir="true" />
+		<ant dir="src/fonts" target="fonts" useNativeBasedir="true" />
+		<ant dir="src/layouts" target="layouts" useNativeBasedir="true" />
+		<ant dir="src/mapview" target="mapview" useNativeBasedir="true" />
+	</target>
+
+	<target name="clean">
+		<ant dir="src/backgrounds" target="clean" useNativeBasedir="true" />
+		<ant dir="src/dialogs" target="clean" useNativeBasedir="true" />
+		<ant dir="src/fonts" target="clean" useNativeBasedir="true" />
+		<ant dir="src/layouts" target="clean" useNativeBasedir="true" />
+		<ant dir="src/mapview" target="clean" useNativeBasedir="true" />
+	</target>
+
+</project>

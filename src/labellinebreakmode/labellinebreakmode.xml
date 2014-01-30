@@ -1,0 +1,9 @@
+<project name="labellinebreakmode" type="application">
+	<runtime_parameter name="main_class">biz.app.examples.labellinebreakmode.Main</runtime_parameter>
+	<android_min_api_level value="10" />
+	<runtime_parameter name="android_no_window_title" />
+	<android_package_name>biz.app.examples.labellinebreakmode</android_package_name>
+	<import_library name="myapps-framework" />
+	<ui_xml file="src/biz/app/examples/labellinebreakmode/UITabBar.ui" />
+	<ui_xml file="src/biz/app/examples/labellinebreakmode/UIPage.ui" />
+</project>

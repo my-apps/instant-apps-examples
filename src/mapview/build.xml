@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mapview" default="mapview" basedir=".">
+
+	<!-- BEGIN COMMON PROLOG -->
+	<property name="myapps" value="myapps" />
+	<sequential>
+		<local name="myapps-xml" />
+		<exec executable="${myapps}" logerror="true" outputproperty="myapps-sdk"><arg value="-print-sdk-path" /></exec>
+		<condition property="myapps-xml" value="ant-dummy.xml" else="ant-common.xml"><isset property="myapps.found" /></condition>
+		<import file="${myapps-sdk}/share/my-apps.com/${myapps-xml}" />
+	</sequential>
+	<!-- END COMMON PROLOG -->
+
+	<target name="mapview">
+		<myapps-application>
+			<src><pathelement location="src" /></src>
+		</myapps-application>
+	</target>
+
+	<target name="clean" depends="mapview-clean" />
+	<target name="mapview-clean">
+		<myapps-clean-library />
+	</target>
+
+</project>

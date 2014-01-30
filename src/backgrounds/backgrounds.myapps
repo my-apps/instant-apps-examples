@@ -1,0 +1,13 @@
+<project name="backgrounds" type="application">
+	<android_package_name>biz.app.examples.backgrounds</android_package_name>
+	<android_title>Backgrounds example</android_title>
+	<runtime_parameter name="main_class">biz.app.examples.backgrounds.Main</runtime_parameter>
+	<import_library name="myapps-framework" />
+	<resource_file path="images/big.png" alias="big.png"/>
+	<resource_file path="images/small.png"  alias="small.png" />
+	<resource_file path="images/widecat.png" alias="widecat.png" />
+	<resource_file path="images/longcat.png" alias="longcat.png" />
+	<resource_file path="images/ios.png" alias="ios.png" />
+	<resource_file path="images/ios_rotated.png" alias="ios_rotated.png" />
+	<ui_xml file="src/biz/app/examples/backgrounds/UIBackgroundsExample.ui" />
+</project>

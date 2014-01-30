@@ -1,0 +1,48 @@
+<!-- Layout usage. Main ui class. -->
+<ui package="biz.app.examples.layouts" class="UIMain">
+	<!-- Different layout type examples are shown in different tabs. -->
+	<TabBar id="uiTabBar" layout_size="FILL_PARENT, FILL_PARENT">
+		<!-- Linear layout usage. -->
+		<TabPage id="uiLinearLayoutPage" text=".LINEAR" layout_size="FILL_PARENT, FILL_PARENT">
+			<!-- You should explictly declare orientation as vertical. Default value is horizontal. -->
+			<LinearLayout id="uiLinearLayout" orientation="vertical" layout_size="FILL_PARENT, FILL_PARENT"
+				backgroundimage="gray.png@tile:none" >
+				<Button id="uiLinearHelloButton" text=".HELLO" layout_size="FILL_PARENT, WRAP_CONTENT"
+					layout_alignment="center" font="default,40,normal" textcolor="yellow" layout_margins="10,10,10,10" backgroundimage="red.png@tile:none"/>
+				<Button id="uiLinearWorldButton" text=".WORLD" layout_size="FILL_PARENT, WRAP_CONTENT"
+					layout_alignment="center_right" layout_margins="10,10,10,10" textcolor="yellow" backgroundimage="blue.png@tile:none"/>
+				<!-- Here, the horizontal layout is created. Notice the button's 'text' attribute, it contains explicitly defined strings.
+					This is acceptable only if these strings do not eventually require localization. -->
+				<LinearLayout id="uiHorizontalLinearLayout" orientation="horizontal" layout_size="FILL_PARENT, WRAP_CONTENT"
+					backgroundimage="green.png@tile:none">
+					<Button id="uiLinearHorizontalButton1" text="Fixed height 100db" layout_size="WRAP_CONTENT, 100"
+						layout_alignment="bottom_right" layout_margins="10,10,10,10" textcolor="yellow" backgroundimage="red.png@tile:none"/>
+					<Button id="uiLinearHorizontalButton2" text="bottom" layout_size="WRAP_CONTENT, WRAP_CONTENT"
+						layout_alignment="bottom_right" layout_margins="10,10,10,10" textcolor="yellow" backgroundimage="blue.png@tile:none"/>
+					<Button id="uiLinearHorizontalButton3" text="center" layout_size="WRAP_CONTENT, WRAP_CONTENT"
+						layout_alignment="center_right" layout_margins="10,10,10,10" textcolor="yellow" backgroundimage="gray.png@tile:none"/>
+				</LinearLayout>
+			</LinearLayout>
+		</TabPage>
+		<!-- Absolute layout usage. -->
+		<TabPage id="uiAbsoluteLayoutPage" text=".ABSOLUTE">
+			<AbsoluteLayout id="uiAbsoluteLayout" layout_size="FILL_PARENT, FILL_PARENT" backgroundimage="gray.png@tile:none">
+				<!-- Here we should specify x,y coordinates of the widget. -->
+				<Button id="uiAbsoluteHelloButton" text=".HELLO" layout_size="WRAP_CONTENT, WRAP_CONTENT"
+					layout_x="10" layout_y="100" font="default,40,normal" textcolor="yellow" layout_margins="10,10,10,10" backgroundimage="red.png@tile:none"/>
+				<Button id="uiAbsoluteWorldButton" text=".WORLD" layout_size="WRAP_CONTENT, WRAP_CONTENT"
+					layout_x="100" layout_y="300" layout_margins="10,10,10,10" textcolor="yellow" backgroundimage="blue.png@tile:none"/>
+			</AbsoluteLayout>
+		</TabPage>
+		<!-- Simple layout usage. -->
+		<TabPage id="uiSimpleLayoutPage" text=".SIMPLE">
+			<SimpleLayout id="uiSimpleLayout" layout_size="FILL_PARENT, FILL_PARENT" backgroundimage="gray.png@tile:none">
+				<!-- Second label will overlap the first one. -->
+				<Button id="uiSimpleHelloButton" text=".HELLO" layout_size="WRAP_CONTENT, WRAP_CONTENT"
+					font="default,40,normal" textcolor="yellow" layout_margins="10,10,10,10" backgroundimage="red.png@tile:none"/>
+				<Button id="uiSimpleWorldButton" text=".WORLD" layout_size="WRAP_CONTENT, WRAP_CONTENT"
+					layout_margins="10,10,10,10" textcolor="yellow" backgroundimage="blue.png@tile:none"/>
+			</SimpleLayout>
+		</TabPage>
+	</TabBar>
+</ui>

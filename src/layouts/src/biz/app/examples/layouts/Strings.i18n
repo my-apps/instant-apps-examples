@@ -1,0 +1,22 @@
+<Language class="Strings" package="biz.app.examples.layouts">
+	<HELLO>
+		<RUSSIAN>Здравствуй</RUSSIAN>
+		<ENGLISH>Hello</ENGLISH>
+	</HELLO>
+	<WORLD>
+		<RUSSIAN>МИР</RUSSIAN>
+		<ENGLISH>WORLD</ENGLISH>
+	</WORLD>
+	<LINEAR>
+		<RUSSIAN>Линейный</RUSSIAN>
+		<ENGLISH>Linear</ENGLISH>
+	</LINEAR>
+	<ABSOLUTE>
+		<RUSSIAN>Абсолютный</RUSSIAN>
+		<ENGLISH>Absolute</ENGLISH>
+	</ABSOLUTE>
+	<SIMPLE>
+		<RUSSIAN>Простой</RUSSIAN>
+		<ENGLISH>Simple</ENGLISH>
+	</SIMPLE>
+</Language>
